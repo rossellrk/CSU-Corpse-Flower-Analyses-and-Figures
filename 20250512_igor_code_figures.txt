@@ -1,0 +1,550 @@
+duplicate root:PPB_waves:'C2H7S2+', dmds_copy
+•duplicate root:PPB_waves:'C2H7S2+', dmds_to_mesh
+•
+•make/O/D dmds_to_mesh = root:PPB_waves:'C2H7S2+' / root:CH5S_actual_ppb; edit dmds_to_mesh
+•make/O/D/N=(numpnts(root:PPB_waves:'C2H7S2+')) dmds_to_mesh = root:PPB_waves:'C2H7S2+' / root:CH5S_actual_ppb; edit dmds_to_mesh
+•make/O/D/N=(numpnts(root:PPB_waves:'C2H7S+')) dms_to_mesh = root:PPB_waves:'C2H7S+' / root:CH5S_actual_ppb; edit dms_to_mesh
+•make/O/D/N=(numpnts(root:CH5S_actual_ppb)) mesh_to_mesh = root:CH5S_actual_ppb / root:CH5S_actual_ppb; edit mesh_to_mesh
+•make/O/D/N=(numpnts(root:PPB_waves:'C2H7S3+')) dmts_to_mesh = root:PPB_waves:'C2H7S3+' / root:CH5S_actual_ppb; edit dmts_to_mesh
+•Display root:ratios:mesh_to_mesh, root:ratios:dmts_to_mesh, root:ratios:dms_to_mesh, root:ratios:dmds_to_mesh vs LocalTime
+
+// Main TS plot
+Created from experiment 'PTR_Corpse_AbigailKossData_RKR_20241106', 2024-12-18 11:25:07 AM
+•Label left "\\F'Arial Black'\\Z28 C\\BX\\MH\\BY\\M\\Z28S\\BZ\\M [ppb]"
+•Label right "\\F'Arial Black'\\Z28 CH\\B5\\M\\Z28S [ppb]"
+•ModifyGraph rgb('C2H7S2+')=(47802,22102,9252),rgb('C2H7S3+')=(65535,42405,21074),rgb('C2H7S+')=(60652,53456,37522),rgb(CH5S_actual_ppb)=(14392,7453,10794)
+•ModifyGraph axRGB(left)=(47802,22102,9252),tlblRGB(left)=(47802,22102,9252),alblRGB(left)=(47802,22102,9252)
+•ModifyGraph fStyle=1,axRGB(right)=(14392,7453,10794)
+•ModifyGraph fSize(right)=28
+•SetAxis right 0,7
+•Label right "\\F'Arial Black'\\Z28 C\\BX\\MH\\BY\\M\\Z28S\\BZ\\M [ppb]"
+•ModifyGraph axRGB(right)=(47802,22102,9252),tlblRGB(right)=(47802,22102,9252),alblRGB(right)=(47802,22102,9252)
+•ModifyGraph tlblRGB(left)=(14392,7453,10794),alblRGB(left)=(14392,7453,10794)
+•Legend/C/N=text1/J "\\Z14\\F'Arial Black'\\s(CH5S_actual_ppb) MeSH\r\\s('C2H7S+') DMS\r\\s('C2H7S2+') DMDS\r\\s('C2H7S3+') DMTS"
+•modifygraph lsize=2
+•DoWindow/T Graph1_3,"full_TS"
+•DoWindow/T Graph1_1,"male_TS"
+•SetAxis bottom 3799587600,3799648800
+•SetAxis right 0,0.5
+•SetAxis left 0,1.6
+•ShowTools/A arrow
+•HideTools/A
+•ModifyGraph manTick(left)={0,0.4,0,1},manMinor(left)={0,0}
+•modifygraph lsize=1
+•ModifyGraph nticks(bottom)=6
+•Label right "\\F'Arial Black'\\Z10 C\\BX\\MH\\BY\\M\\Z28S\\BZ\\M [ppb]"
+•ModifyGraph fSize(left)=10
+•ModifyGraph fSize(right)=10
+•ModifyGraph fSize(bottom)=8
+•Legend/C/N=text1/J "\\F'Arial Black'\\Z08\\s(CH5S_actual_ppb) MeSH\r\\s('C2H7S+') DMS\r\\s('C2H7S2+') DMDS\r\\s('C2H7S3+') DMTS"
+•Label right "\\F'Arial Black'\\Z10 C\\BX\\MH\\BY\\M\\Z10S\\BZ\\M [ppb]"
+•Label left "\\F'Arial Black'\\Z28 CH\\B5\\M\\Z28S [ppb]"
+•Label left "\\F'Arial Black'\\Z08 CH\\B5\\M\\Z08S [ppb]"
+•SetAxis right 0,0.3
+•Legend/K/N=text1
+•Label left "\\F'Arial Black'\\Z28 MeSH [ppb]"
+•Label right "\\F'Arial Black'\\Z28 Di-sulfur species [ppb]"
+•Label right "\\F'Arial Black'\\Z28 Other sulfur species [ppb]"
+•Label left "\\Z28 MeSH [ppb]"
+•Legend/C/N=text1/J "\\Z14\\s(CH5S_actual_ppb) MeSH\r\\s('C2H7S+') DMS\r\\s('C2H7S2+') DMDS\r\\s('C2H7S3+') DMTS"
+•Label right "\\Z28 Other sulfur species [ppb]"
+•ModifyGraph font(bottom)="Arial"
+•Label left "\\Z08 MeSH [ppb]"
+•Label right "\\Z10 C\\BX\\MH\\BY\\M\\Z10S\\BZ\\M [ppb]"
+•Label right "\\Z28 Sulfonated Species [ppb]"
+•Label right "\\Z28 Sulfur species [ppb]"
+•Label right "\\Z10 Sulfur Species [ppb]"
+•Legend/C/N=text1/J "\\Z18\\s(CH5S_actual_ppb) MeSH\r\\s('C2H7S+') DMS\r\\s('C2H7S2+') DMDS\r\\s('C2H7S3+') DMTS"
+•ModifyGraph fStyle(left)=0
+•ModifyGraph fStyle(bottom)=0
+•ModifyGraph fStyle=0,font(right)="Arial"
+•ModifyGraph fStyle(left)=0
+•ModifyGraph fStyle(bottom)=0
+•ModifyGraph fStyle=0
+•ModifyGraph axRGB(right)=(41634,19275,7967),tlblRGB(right)=(41634,19275,7967),alblRGB(right)=(41634,19275,7967)
+•ModifyGraph width=521.28
+•ModifyGraph fSize(left)=10
+•ModifyGraph fSize(right)=10
+•ModifyGraph fSize=10
+•Label left "\\Z10 MeSH [ppb]"
+•Label right "\\Z10 Sulfur species [ppb]"
+•ModifyGraph height=280.8
+•ModifyGraph width=0,height=0
+•AppendToGraph CH5S_actual_ppb vs LocalTime
+•RemoveFromGraph CH5S_actual_ppb#1
+•AppendToGraph/L=testL/B=test_bottom CH5S_actual_ppb vs LocalTime
+•Label test_bottom "  "
+•ModifyGraph axisEnab(test_bottom)={0,0.25}
+•ModifyGraph axisEnab(testL)={0,0.25}
+•ModifyGraph axisEnab(testL)={0.7,1},axisEnab(test_bottom)={0.7,1}
+•SetAxis test_bottom 3799587600,*
+•SetAxis test_bottom 3799587600,3799648800
+•SetAxis testL 0,1.6
+•ModifyGraph nticks(testL)=6,manTick(testL)={0,0.4,0,1},manMinor(testL)={0,0}
+•Label testL "MeSH (ppb)"
+•ModifyGraph rgb(CH5S_actual_ppb#1)=(14392,7453,10794)
+•ModifyGraph fSize(test_bottom)=10,font(test_bottom)="Arial"
+•ModifyGraph fSize=10,font(testL)="Arial"
+•AppendToGraph/R=insert_axis_R/B=test_bottom :PPB_waves:'C2H7S+',:PPB_waves:'C2H7S2+',:PPB_waves:'C2H7S3+' vs LocalTime
+•Legend/C/N=text1/J "\\Z18\\s(CH5S_actual_ppb) MeSH\r\\s('C2H7S+') DMS\r\\s('C2H7S2+') DMDS\r\\s('C2H7S3+') DMTS\r\\s(CH5S_actual_ppb#1) CH5S_actual_ppb#1"
+•Legend/C/N=text1/J "\\Z18\\s(CH5S_actual_ppb) MeSH\r\\s('C2H7S+') DMS\r\\s('C2H7S2+') DMDS\r\\s('C2H7S3+') DMTS"
+•ModifyGraph fSize=10,font(insert_axis_R)="Arial",axisEnab(insert_axis_R)={0.7,1}
+•SetAxis insert_axis_R 0,0.3
+•ModifyGraph rgb('C2H7S+'#1)=(60652,53456,37522),rgb('C2H7S2+'#1)=(47802,22102,9252),rgb('C2H7S3+'#1)=(65535,42405,21074)
+•Label insert_axis_R "Sulfur Species (ppb)"
+•Layout Graph1_1,Graph1_2
+•Layout/P=Landscape/S Graph1_1,Graph1_2
+•ModifyGraph rgb('C2H7S2+')=(65535,16385,16385)
+•ModifyGraph axisEnab(testL)={0.5,0.8},axisEnab(test_bottom)={0.65,0.95},axisEnab(insert_axis_R)={0.5,0.8}
+•ModifyGraph axisEnab(test_bottom)={0.72,0.88}
+•ModifyGraph axisEnab(test_bottom)={0.68,0.92}
+•ModifyGraph axisEnab(testL)={0.53,0.76}
+•ModifyGraph axisEnab(insert_axis_R)={0.53,0.76},freePos(insert_axis_R)=-57.3913
+•ModifyGraph manTick(insert_axis_R)={0,0.1,0,1},manMinor(insert_axis_R)={0,0}
+•ModifyGraph manTick(testL)={0,0.53,0,1},manMinor(testL)={0,0}
+•ModifyGraph axisEnab(test_bottom)={0.65,0.95}
+•ModifyGraph axisEnab(testL)={0.5,0.8}
+•ModifyGraph axisEnab(insert_axis_R)={0.5,0.8}
+•ModifyGraph axisEnab(test_bottom)={0.67,0.93}
+•Legend/C/N=text1/J "\\Z08\\s(CH5S_actual_ppb) MeSH\r\\s('C2H7S+') DMS\r\\s('C2H7S2+') DMDS\r\\s('C2H7S3+') DMTS"
+•modifygraph lsize=1
+•ModifyGraph width=521.28,height=270
+•ModifyGraph height=720
+•ModifyGraph height=266.4
+•ModifyGraph width=720
+•ModifyGraph width=1080
+•ModifyGraph width=521.28
+•ModifyGraph fSize(insert_axis_R)=8
+•ModifyGraph fSize(testL)=8
+•ModifyGraph tick(testL)=2
+•ModifyGraph tick(insert_axis_R)=2,freePos(insert_axis_R)=-46.6667
+•ModifyGraph axisEnab(test_bottom)={0.7,0.9}
+•ModifyGraph axRGB(testL)=(14392,7453,10794),tlblRGB(testL)=(14392,7453,10794),alblRGB(testL)=(14392,7453,10794)
+•ModifyGraph freePos(insert_axis_R)=-60.6667,axRGB(insert_axis_R)=(41634,19275,7967),tlblRGB(insert_axis_R)=(41634,19275,7967),alblRGB(insert_axis_R)=(41634,19275,7967)
+•ShowTools/A arrow
+•SetDrawEnv linethick= 1.00
+•SetDrawEnv linethick= 1.00
+•SetDrawEnv linethick= 0.50
+•SetDrawEnv linethick= 0.50
+•SetDrawEnv fillpat= 0,linethick= 0.50
+•HideTools/A
+•ShowTools/A arrow
+•SetDrawEnv dash= 3,linethick= 5.00
+•SetDrawEnv dash= 3,linethick= 0.50
+•SetDrawEnv linethick= 0.50
+•HideTools/A
+•SavePICT/E=-9 as "sulfur_TS_20250109.svg"
+•SetAxis insert_axis_R -0.01,0.3;DelayUpdate
+•ModifyGraph freePos(insert_axis_R)=-60.6667
+•SetAxis testL -0.01,1.6
+•SetAxis insert_axis_R -0.03,0.3
+•SetAxis testL -0.03,1.6
+•ModifyGraph tick(insert_axis_R)=0
+•ModifyGraph tick=0
+•SavePICT/E=-9 as "sulfur_TS_20250109.svg"
+•Label testL " "
+•Label insert_axis_R " "
+•ModifyGraph fSize(test_bottom)=8
+•ModifyGraph axisEnab(test_bottom)={0.68,0.92},freePos(test_bottom)=-176.667
+•SavePICT/E=-9 as "sulfur_TS_20250109.svg"
+•TextBox/C/N=text0/A=MC "Female Bloom"
+•TextBox/C/N=text2/A=MC "Male Bloom"
+•Label left "\\Z10 MeSH (ppb)"
+•Label right "\\Z10 Sulfur species (ppb)"
+•Legend/C/N=text1/J "\\Z10\\s(CH5S_actual_ppb) MeSH\r\\s('C2H7S+') DMS\r\\s('C2H7S2+') DMDS\r\\s('C2H7S3+') DMTS"
+•SavePICT/E=-9 as "20250110_sulfur_TS.svg"
+•ModifyGraph rgb(CH5S_actual_ppb)=(5140,4626,5654),rgb(CH5S_actual_ppb#1)=(5140,4626,5654)
+•ModifyGraph axRGB(left)=(5140,4626,5654),tlblRGB(left)=(5140,4626,5654),alblRGB(left)=(5140,4626,5654)
+•ModifyGraph rgb('C2H7S3+')=(34181,40863,8738),rgb('C2H7S3+'#1)=(34181,40863,8738)
+•ModifyGraph rgb('C2H7S2+')=(34438,26471,25957),rgb('C2H7S2+'#1)=(34438,26471,25957)
+•ModifyGraph rgb('C2H7S+')=(42919,31611,16962),rgb('C2H7S+'#1)=(42919,31611,16962)
+•ModifyGraph axRGB(right)=(34438,26471,25957),tlblRGB(right)=(34438,26471,25957),alblRGB(right)=(34438,26471,25957)
+•SavePICT/E=-9 as "20250110_sulfur_TS.svg"
+•ModifyGraph axisEnab(test_bottom)={0.68,0.91}
+•ShowTools/A arrow
+•HideTools/A
+•ModifyGraph mirror(test_bottom)=1
+•ModifyGraph axOffset(test_bottom)=20
+•TextBox/C/N=text3/F=0/A=LC " 6:00 PM\r5/26/2024"
+•TextBox/C/N=text3 " \\Z086:00 PM\r5/26/2024"
+•ModifyGraph mirror=0
+•TextBox/C/N=text0/Z=1/X=-39.60/Y=44.00
+•TextBox/C/N=text2/Z=1/X=17.74/Y=44.00
+•TextBox/C/N=text3/B=1 "\\Z0812:00 AM\r5/27/2024"
+•TextBox/C/N=text3/Z=1
+•TextBox/C/N=text3/X=74.59/Y=8.00
+•TextBox/C/N=text3/X=74.59/Y=8.40
+•TextBox/C/N=text3/X=74.59/Y=-8.00
+•ShowTools/A arrow
+•SetDrawEnv linefgc= (65535,65535,65535)
+•HideTools/A
+•ModifyGraph mirror(test_bottom)=1
+•ModifyGraph mirror=0
+•TextBox/C/N=text3/X=74.59/Y=-8.05
+•TextBox/C/N=text3/X=74.59/Y=-8.15
+•TextBox/C/N=text3/X=74.59/Y=-8.50
+•TextBox/C/N=text3/X=74.59/Y=-8.40
+•TextBox/C/N=text3/X=74.59/Y=-8.30
+•ShowTools/A arrow
+•HideTools/A
+•ShowTools/A arrow
+•HideTools/A
+•SetAxis testL -0.02,1.6
+•SetAxis testL -0.005,1.6
+•SetAxis testL -0.03,1.6
+•ShowTools/A arrow
+•HideTools/A
+•ShowTools/A arrow
+•HideTools/A
+•ShowTools/A arrow
+•HideTools/A
+•ShowTools/A arrow
+•HideTools/A
+•ModifyGraph rgb('C2H7S3+')=(30069,35723,7453)
+•ModifyGraph rgb('C2H7S2+')=(42662,32639,32125)
+•ModifyGraph rgb('C2H7S2+'#1)=(42662,32639,32125)
+•ModifyGraph rgb('C2H7S3+'#1)=(30069,35723,7453)
+•SavePICT/E=-9 as "20250110_sulfur_TS.svg"
+•ModifyGraph margin(left)=72
+•ModifyGraph margin(left)=144
+•ShowTools/A arrow
+•SetDrawEnv ycoord= left;DelayUpdate
+•DrawLine -0.00575263662511985,10,1.00479386385427,10
+•SetDrawEnv dash= 3
+•HideTools/A
+•ShowTools/A arrow
+•SetDrawEnv linefgc= (5140,4626,5654,32768)
+•HideTools/A
+•ShowTools/A arrow
+•SetDrawEnv arrow= 1
+•SetDrawEnv ycoord= left;DelayUpdate
+•DrawLine -0.112176414189837,10,-0.0527325023969319,10
+•SetDrawEnv ycoord= left;DelayUpdate
+•DrawText -0.25790987535954,10,"Paper Mills"
+•SetDrawEnv ycoord= prel
+•DrawLine -0.00191754554170661,75.2,1.00862895493768,75.2
+•DrawLine -0.0977948226270374,75.2,-0.0383509108341323,75.2
+•DrawLine -0.00575263662511985,20,1.00479386385427,20
+•DrawLine -0.099712368168744,20,-0.0402684563758389,20
+•DrawText -0.214765100671141,0.98562851782364,"Swine Operations"
+•DrawText -0.250239693192713,0.98750469043152,"Swine-feeding farms"
+•SetDrawEnv fsize= 10
+•DrawLine -0.00575263662511985,2.5,1.00479386385427,2.5
+•DrawLine 0,20,1.01054650047939,20
+•DrawLine -0.0738255033557047,20,-0.0143815915627996,20
+•DrawLine 0.000958772770853308,75.2,1.01150527325024,75.2
+•SetDrawEnv fsize= 10;DelayUpdate
+•DrawText -0.219558964525408,0.873058161350844,"Median landfill atmospheres"
+•DrawText -0.219558964525408,0.873058161350844,"Median landfill"
+•DrawText -0.220517737296261,0.873058161350844,"Median landfills"
+•DrawLine -0.00191754554170661,2.5,1.00862895493768,2.5
+•DrawText -0.272291466922339,1.02878048780488,"Wastewater"
+•DrawText -0.207094918504314,1.04941838649156,"Solid waste"
+•DrawLine 0.000958772770853308,70,1.01150527325024,70
+•DrawLine -0.0728667305848514,70,-0.0134228187919463,70
+•DrawText -0.220517737296261,0.873058161350844,"Russian papermill"
+•DrawLine 0,66,1.01054650047939,66
+•DrawLine 0.000958772770853308,20,1.01150527325024,20
+•DrawLine -0.0728667305848514,66,-0.0134228187919463,66
+•DrawLine 0,70,1.01054650047939,70
+•DrawLine -0.0728667305848514,70,-0.0134228187919463,70
+•DrawLine 0.000958772770853308,134,1.01150527325024,134
+•DrawLine -0.0738255033557047,134,-0.0143815915627996,134
+•DrawText -0.253116011505273,0.754859287054409,"Swine nursery"
+•DrawRect 3799504800,2.5,3799558845.24237,2.5
+•DrawLine -0.0987535953978907,2.5,-0.0393096836049856,2.5
+•DrawText -0.207094918504314,1.0175234521576,"Municipal solid waste"
+•DrawText -0.273250239693192,1.01189493433396,"Solid waste"
+•SetDrawEnv dash= 1
+•SetDrawEnv linefgc= (5140,4626,5654,19661)
+•SetDrawEnv linefgc= (5140,4626,5654,19661),dash= 1
+•SetDrawEnv linefgc= (5140,4626,5654,19661),dash= 1
+•HideTools/A
+•SetAxis left 0,600
+•ShowTools/A arrow
+•DrawLine 0.000958772770853308,577,1.01150527325024,577
+•DrawLine -0.122722914669223,577,-0.0632790028763183,577
+•DrawLine -0.0728667305848514,577,-0.0632790028763183,577
+•DrawLine -0.0728667305848514,577,-0.0728667305848514,577
+•DrawLine -0.0728667305848514,577.485928705441,-0.012464046021093,577
+•DrawText -0.210930009587728,0.0587992495309568,"Landfill maximum"
+•HideTools/A
+•ModifyGraph margin(left)=126
+•ShowTools/A arrow
+•HideTools/A
+•ShowTools/A arrow
+•DrawText -0.226270373921381,0.055046904315197,"Landfill maximum (a)"
+•HideTools/A
+•ModifyGraph margin(left)=129
+•ShowTools/A arrow
+•DrawLine -0.0508149568552253,577,-0.012464046021093,577
+•DrawLine -0.0575263662511985,577,-0.012464046021093,577
+•DrawLine -0.0575263662511985,134,-0.012464046021093,134
+•DrawLine -0.0575263662511985,70,-0.0134228187919463,70
+•DrawLine -0.090124640460211,2.5,-0.0460210930009588,2.5
+•DrawText -0.196548418024928,0.799887429643527,"Swine nursery (b)"
+•DrawText -0.219558964525408,0.904953095684803,"Russian papermill (c)"
+•DrawText -0.202301054650047,1.0175234521576,"Solid waste (d)"
+•HideTools/A
+•Label left "\\Z14 MeSH (ppb)"
+•Label left "\\Z12 MeSH (ppb)"
+•Label right "\\Z12 Sulfur species (ppb)"
+•Legend/C/N=text1/J "\\Z12\\s(CH5S_actual_ppb) MeSH\r\\s('C2H7S+') DMS\r\\s('C2H7S2+') DMDS\r\\s('C2H7S3+') DMTS"
+•TextBox/C/N=text0 "\\Z12Female Bloom"
+•TextBox/C/N=text2 "\\Z12Male Bloom"
+•TextBox/C/N=text2/Z=0
+•TextBox/C/N=text0/Z=0
+•TextBox/C/N=text0/X=-39.60/Y=44.65
+•TextBox/C/N=text0/Z=1
+•SavePICT/E=-9 as "ts_20250124.svg"
+•ShowTools/A arrow
+•DrawText -0.240651965484181,0.906829268292683,"Russian papermill (b)"
+•DrawText -0.22339405560882,1.0175234521576,"Solid waste (c)"
+•HideTools/A
+•SavePICT/E=-9 as "2024.svg"
+•ShowTools/A arrow
+•HideTools/A
+•ModifyGraph fSize(left)=12
+•ModifyGraph fSize(right)=12
+•Label left "\\Z14 MeSH (ppb)"
+•Label right "\\Z14 Sulfur species (ppb)"
+•ModifyGraph axRGB(right)=(29555,22616,22102),tlblRGB(right)=(29555,22616,22102),alblRGB(right)=(29555,22616,22102)
+•ModifyGraph axRGB(insert_axis_R)=(29555,22616,22102),tlblRGB(insert_axis_R)=(29555,22616,22102),alblRGB(insert_axis_R)=(29555,22616,22102)
+•SetAxis right 0,8
+•ModifyGraph rgb('C2H7S2+')=(34438,26214,25957)
+•ModifyGraph rgb('C2H7S2+')=(52171,39578,39321)
+•modifygraph lsize = 1.5
+•ModifyGraph rgb('C2H7S+')=(50629,37008,20046)
+•SavePICT/E=-9
+•ModifyGraph fSize(bottom)=12
+•SavePICT/E=-9
+•Label right "\\Z14 Sulfur Species (ppb)"
+•Label left "\\Z14 MeSH (ppbv)"
+•Label right "\\Z14 Sulfur Species (ppbv)"
+•
+•
+•
+•Legend/C/N=text0/F=0/A=MC/H={10,2,5}
+•Legend/C/N=text1/J/H=40 "\\F'Arial Black'\\Z14\\s(CH5S_actual_ppb#1) \\F'Arial'\\Z12MeSH\r\\F'Arial Black'\\Z14\\s('C2H7S+') \\F'Arial'\\Z12DMS";DelayUpdate
+•AppendText/N=text1 "\\F'Arial Black'\\Z14\\s('C2H7S2+') \\F'Arial'\\Z12DMDS\r\\F'Arial Black'\\Z14\\s('C2H7S3+') \\F'Arial'\\Z12DMTS"
+•Legend/C/N=text1/J/H=30
+•HideTools/A
+•SavePICT/E=-9
+•Legend/C/N=text0/J/F=2
+•SavePICT/E=-9
+•ModifyGraph rgb('C2H7S+')=(41120,15163,18504)
+•ModifyGraph rgb('C2H7S+'#1)=(41120,15163,18504)
+•Legend/C/N=text1/J "\\F'Franklin Gothic Heavy'\\Z14\\s(CH5S_actual_ppb#1) \\F'Arial'\\Z12MeSH\r\\F'Arial Black'\\Z14\\s('C2H7S+') \\F'Arial'\\Z12DMS";DelayUpdate
+•AppendText/N=text1 "\\F'Arial Black'\\Z14\\s('C2H7S2+') \\F'Arial'\\Z12DMDS\r\\F'Arial Black'\\Z14\\s('C2H7S3+') \\F'Arial'\\Z12DMTS"
+•Legend/C/N=text1/J/H={30,3,10}
+•SavePICT/E=-9
+
+
+
+// SI figure
+duplicate root:CH5S_actual_ppb, HC_S_class_total_ppb
+•HC_S_class_total_ppb += root:PPB_waves:'CH3S3+' 
+•HC_S_class_total_ppb += root:PPB_waves:'C2H7S+'
+•HC_S_class_total_ppb += root:PPB_waves:'C2H7S2+'
+•HC_S_class_total_ppb += root:PPB_waves:'C2H7S3+'
+•duplicate root:PPB_waves:'C3H7OS+', OC_S_class_total_ppb
+•OC_S_class_total_ppb += root:PPB_waves:'C4H9OS+'
+• OC_S_class_total_ppb += root:Add_PPB_Waves:'C2H7O2S+'
+•duplicate root:PPB_waves:'C4H7O+', HCO_class_total_ppb
+•HCO_class_total_ppb += root:PPB_waves:'C4H11O2+'
+•HCO_class_total_ppb += root:PPB_waves:'C4H11O3+'
+•HCO_class_total_ppb += root:PPB_waves:'C5H5O2+'
+•HCO_class_total_ppb += root:PPB_waves:'C5H11O+'
+•HCO_class_total_ppb += root:PPB_waves:'C5H13O2+'
+•HCO_class_total_ppb += root:PPB_waves:'C6H7O+'
+•HCO_class_total_ppb += root:PPB_waves:'C6H7O2+'
+•HCO_class_total_ppb += root:PPB_waves:'C6H9O3+'
+•HCO_class_total_ppb += root:PPB_waves:'C6H13O+'
+•HCO_class_total_ppb += root:PPB_waves:'C7H5O+'
+•HCO_class_total_ppb += root:PPB_waves:'C7H7O+'
+•HCO_class_total_ppb += root:PPB_waves:'C7H9O4+'
+•HCO_class_total_ppb += root:Add_PPB_Waves:'C2H5O2+'
+•HCO_class_total_ppb += root:Add_PPB_Waves:'C5H11O2+'
+•HCO_class_total_ppb += root:Add_PPB_Waves:'C7H9O+'
+•HCO_class_total_ppb += root:Add_PPB_Waves:'C8H9O+'
+•duplicate root:Add_PPB_Waves:'C10H17+', HC_class_total_ppb
+•HC_class_total_ppb += root:PPB_waves:'C8H15+'
+•HC_class_total_ppb += root:PPB_waves:'C8H11+'
+•HC_class_total_ppb += root:PPB_waves:'C7H13+'
+•HC_class_total_ppb += root:PPB_waves:'C6H11+'
+•HC_class_total_ppb += root:PPB_waves:'C6H7+'
+•HC_class_total_ppb += root:PPB_waves:'C5H11+'
+
+•ReplaceWave trace=CH5S_actual_ppb_smth, HC_S_class_total_ppb
+•ReplaceWave trace=HC_S_class_total_ppb, :ppb_waves_smoothed:HC_class_total_ppb_smth
+•ReplaceWave trace=HC_class_total_ppb_smth, :ppb_waves_smoothed:HC_S_class_total_ppb_smth
+•ReplaceWave trace='C2H7S2+_smth', :ppb_waves_smoothed:OC_S_class_total_ppb_smth
+•RemoveFromGraph 'C2H7S3+_smth'
+•RemoveFromGraph 'C2H7S+_smth'
+•RemoveFromGraph 'CH3S3+_smth'
+•Legend/C/N=text0/J "\\F'Arial Black'\\s(OC_S_class_total_ppb_smth) \\Z24C\\B2\\M\\Z24H\\B7\\M\\Z24S\\B2\\M\\Z24+\r\\s(HC_S_class_total_ppb_smth) CH\\B5\\Z24\\M\\Z24S\\Z24+"
+•ModifyGraph fSize(left)=16
+•ModifyGraph fSize(newaxis_Left)=16
+•ModifyGraph fSize(bottom)=20
+•modifygraph lsize=1
+•ModifyGraph margin=0
+•modifygraph lsize=2
+•ReplaceWave trace=OC_S_class_total_ppb_smth, :ppb_waves_smoothed:HCO_class_total_ppb_smth;DelayUpdate
+•ReplaceWave /X trace=HC_S_class_total_ppb_smth, :ppb_waves_smoothed:HC_class_total_ppb_smth
+•SetAxis newaxis_Left 0,8
+•SetAxis left 0,4
+•SetAxis newaxis_Left 0,4
+•SetAxis newaxis_Left 0,400
+•ReplaceWave trace=HC_S_class_total_ppb_smth, :ppb_waves_smoothed:HC_class_total_ppb_smth;DelayUpdate
+•ReplaceWave /X trace=HC_class_total_ppb_smth, LocalTime
+•SetAxis left 0,8
+•ShowTools/A arrow
+•HideTools/A
+•ModifyGraph rgb(HC_class_total_ppb_smth)=(56797,29298,12336)
+•ModifyGraph rgb(HCO_class_total_ppb_smth)=(11822,7967,10023)
+•Legend/C/N=text0/J "\\Z24\\F'Arial Black'\\s(HC_class_total_ppb_smth) C\\Bx\\M\\Z24H\\BY\\M\r\n\\Z24\\s(HCO_class_total_ppb_smth) \\Z24C\\Bx\\M\\Z24H\\BY\\M\\Z24O\\BW\\M"
+•Legend/C/N=text0/J "\\Z24\\F'Arial Black'\\s(OC_S_class_total_ppb_smth) C\\Bx\\M\\Z24H\\BY\\M\\Z24S\\Z24\\BZ\\M\\Z24O\\BW\\M";DelayUpdate
+•AppendText/N=text0 "\n\\Z24\\s(HC_S_class_total_ppb_smth)\\Z24 C\\Bx\\M\\Z24H\\BY\\M\\Z24S\\BZ\\M"
+•Label newaxis_Left "\\F'Arial Black'\\Z24 Σ C\\Bx\\M\\Z24H\\BY\\M\\Z24S\\BZ\\M\\Z24 Concentration [ppb]"
+•Label newaxis_Left "\\F'Arial Black' Σ C\\Bx\\MH\\BY\\MS\\BZ\\M Concentration [ppb]"
+•Label left "\\F'Arial Black'Σ C\\BX\\MH\\BY\\MS\\BZ\\M Concentration [ppb]"
+•ModifyGraph fSize(newaxis_right)=16
+•ModifyGraph fSize(right)=16
+•ModifyGraph fSize=16
+•ModifyGraph margin=0
+•Legend/C/N=text0/J "\\Z24\\F'Arial Black'\\s(OC_S_class_total_ppb_smth) C\\Bx\\M\\Z24H\\BY\\M\\Z24S\\Z24\\BZ\\M\\Z24O\\BW\\M";DelayUpdate
+•AppendText/N=text0 "\n\\Z24\\s(HC_S_class_total_ppb_smth)\\Z24 C\\Bx\\M\\Z24H\\BY\\M\\Z24S\\BZ\\M"
+•ModifyGraph margin(right)=21
+•ModifyGraph margin(right)=21
+•ModifyGraph margin(left)=21
+•ReplaceWave trace='C2H5O2+_smth', :ppb_waves_smoothed:HC_S_class_total_ppb_smth
+•SetAxis newaxis_right 0,1.6
+•ReplaceWave trace='C6H7O+_smth', :ppb_waves_smoothed:OC_S_class_total_ppb_smth
+•SetAxis right 0,0.25
+•RemoveFromGraph 'C7H7O+_smth'
+•RemoveFromGraph 'C7H9O+_smth'
+•ModifyGraph rgb(HC_S_class_total_ppb_smth)=(37779,7967,7453)
+•Label left "\\F'Arial Black' Σ C\\Bx\\MH\\BY\\MO\\BW\\M Concentration [ppb]"
+•ModifyGraph axRGB(left)=(56797,29298,12336),tlblRGB(left)=(56797,29298,12336),alblRGB(left)=(56797,29298,12336)
+•Label newaxis_Left "\\F'Arial Black'Σ C\\Bx\\MH\\BY\\M Concentration [ppb]"
+•ModifyGraph axRGB(newaxis_Left)=(11822,7967,10023),tlblRGB(newaxis_Left)=(11822,7967,10023),alblRGB(newaxis_Left)=(11822,7967,10023)
+•Legend/C/N=text0/J "\\Z24\\F'Arial Black'\\Z24\\s(HC_S_class_total_ppb_smth)\\Z24 C\\Bx\\M\\Z24H\\BY\\M\\Z24S\\BZ\\M\\Z24";DelayUpdate
+•AppendText/N=text0 "\\s(OC_S_class_total_ppb_smth) C\\Bx\\M\\Z24H\\BY\\M\\Z24S\\Z24\\BZ\\M\\Z24O\\BW\\M\r\n"
+•Legend/C/N=text0/J "\\Z24\\F'Arial Black'\\Z24\\s(HC_S_class_total_ppb_smth)\\Z24 C\\Bx\\M\\Z24H\\BY\\M\\Z24S\\BZ\\M\\Z24";DelayUpdate
+•AppendText/N=text0 "\n\\s(OC_S_class_total_ppb_smth) C\\Bx\\M\\Z24H\\BY\\M\\Z24S\\Z24\\BZ\\M\\Z24O\\BW\\M\r\n"
+•ModifyGraph rgb(HC_S_class_total_ppb_smth)=(37779,31611,25443)
+•ModifyGraph rgb(HC_S_class_total_ppb_smth)=(24672,5911,0)
+•ModifyGraph rgb(OC_S_class_total_ppb_smth)=(34438,48059,55512)
+•ShowTools/A arrow
+•SetDrawEnv fillpat= 0,linethick= 2.00
+•HideTools/A
+•Label newaxis_right "\\F'Arial Black'Σ C\\Bx\\MH\\BY\\MS\\BZ\\M Concentration [ppb]";DelayUpdate
+•ModifyGraph axRGB(newaxis_right)=(24672,5911,0),tlblRGB(newaxis_right)=(24672,5911,0),alblRGB(newaxis_right)=(24672,5911,0)
+•ModifyGraph axRGB(left)=(34438,48059,55512),tlblRGB(left)=(34438,48059,55512),alblRGB(left)=(34438,48059,55512);DelayUpdate
+•Label left "\\F'Arial Black'Σ C\\BX\\MH\\BY\\MS\\BZ\\MO\\BW\\M Concentration [ppb]"
+•ModifyGraph axRGB(right)=(34438,48059,55512),tlblRGB(right)=(34438,48059,55512),alblRGB(right)=(34438,48059,55512);DelayUpdate
+•Label right "\\F'Arial Black'Σ C\\BX\\MH\\BY\\MS\\BZ\\MO\\BW\\M Concentration [ppb]"
+•ModifyGraph axRGB(right)=(11822,7967,10023),tlblRGB(right)=(11822,7967,10023),alblRGB(right)=(11822,7967,10023);DelayUpdate
+•Label right "\\F'Arial Black' Σ C\\Bx\\MH\\BY\\MO\\BW\\M Concentration [ppb]"
+•SetAxis right 0,0.3
+•ReplaceWave trace=OC_S_class_total_ppb_smth, :ppb_waves_smoothed:HCO_class_total_ppb_smth
+•SetAxis right 0,4
+•ReplaceWave trace=HC_S_class_total_ppb_smth, :ppb_waves_smoothed:HC_class_total_ppb_smth
+•Label newaxis_right "\\F'Arial Black'Σ C\\Bx\\MH\\BY\\M Concentration [ppb]"
+•SetAxis right 0,5
+•SetAxis newaxis_right 0,2
+•Legend/C/N=text0/J "\\Z24\\F'Arial Black'\\s(HC_class_total_ppb_smth) C\\Bx\\M\\Z24H\\BY\\M\r\n\\Z24\\s(HCO_class_total_ppb_smth) \\Z24C\\Bx\\M\\Z24H\\BY\\M\\Z24O\\BW\\M"
+•ModifyGraph rgb(HCO_class_total_ppb_smth)=(56797,29298,12336),rgb(HC_class_total_ppb_smth)=(11822,7967,10023)
+•ModifyGraph fSize=16
+•ModifyGraph fSize=16
+•SavePICT/E=-5/B=72
+
+ReplaceWave trace=HC_S_class_total_ppb_smth, :ppb_waves_smoothed:HC_class_total_ppb_smth
+•Label newaxis_right "\\F'Arial Black'Σ C\\Bx\\MH\\BY\\M Concentration [ppb]"
+•SetAxis right 0,5
+•SetAxis newaxis_right 0,2
+•Legend/C/N=text0/J "\\Z24\\F'Arial Black'\\s(HC_class_total_ppb_smth) C\\Bx\\M\\Z24H\\BY\\M\r\n\\Z24\\s(HCO_class_total_ppb_smth) \\Z24C\\Bx\\M\\Z24H\\BY\\M\\Z24O\\BW\\M"
+•ModifyGraph rgb(HCO_class_total_ppb_smth)=(56797,29298,12336),rgb(HC_class_total_ppb_smth)=(11822,7967,10023)
+•ModifyGraph fSize=16
+•ModifyGraph fSize=16
+•SavePICT/E=-5/B=72
+•SavePICT/E=-5/B=72
+•SavePICT/E=-5/B=72
+•ModifyGraph rgb(HC_S_class_total_ppb_smth)=(1,26214,0)
+•ModifyGraph rgb(HC_S_class_total_ppb_smth)=(26214,26212,0)
+•ModifyGraph axRGB(newaxis_Left)=(26214,26212,0),tlblRGB(newaxis_Left)=(26214,26212,0),alblRGB(newaxis_Left)=(26214,26212,0)
+•ModifyGraph rgb(HC_S_class_total_ppb_smth)=(26214,26212,0)
+•ModifyGraph axRGB(newaxis_right)=(26214,26212,0),tlblRGB(newaxis_right)=(26214,26212,0),alblRGB(newaxis_right)=(26214,26212,0)
+•SavePICT/E=-5/B=72
+•SavePICT/E=-5/B=72
+•SavePICT/E=-5/B=72
+•SavePICT/E=-5/B=72
+•ModifyGraph rgb(OC_S_class_total_ppb_smth)=(31097,43433,50115)
+•ModifyGraph axRGB(left)=(31097,43433,50115),tlblRGB(left)=(31097,43433,50115),alblRGB(left)=(31097,43433,50115)
+•ModifyGraph rgb(OC_S_class_total_ppb_smth)=(31097,43433,50115)
+•ModifyGraph axRGB(right)=(31097,43433,50115),tlblRGB(right)=(31097,43433,50115),alblRGB(right)=(31097,43433,50115)
+•ModifyGraph rgb(HC_S_class_total_ppb_smth)=(21074,17990,12850)
+•ModifyGraph rgb(HC_S_class_total_ppb_smth)=(40349,25443,33153)
+•ModifyGraph axRGB(newaxis_Left)=(40349,25443,33153),tlblRGB(newaxis_Left)=(40349,25443,33153),alblRGB(newaxis_Left)=(40349,25443,33153)
+•ModifyGraph rgb(HC_S_class_total_ppb_smth)=(40349,25443,33153)
+•ModifyGraph axRGB(newaxis_right)=(40349,25443,33153),tlblRGB(newaxis_right)=(40349,25443,33153),alblRGB(newaxis_right)=(40349,25443,33153)
+•ModifyGraph rgb(HC_S_class_total_ppb_smth)=(22873,16962,13878)
+•ModifyGraph rgb(HC_S_class_total_ppb_smth)=(21588,24158,22102)
+•ModifyGraph rgb(HC_S_class_total_ppb_smth)=(16705,21074,7967)
+•ModifyGraph rgb(OC_S_class_total_ppb_smth)=(40092,50629,41377)
+•ModifyGraph rgb(OC_S_class_total_ppb_smth)=(65535,54484,18247)
+•ModifyGraph rgb(OC_S_class_total_ppb_smth)=(59367,48830,16448)
+•ModifyGraph rgb(HC_S_class_total_ppb_smth)=(20303,23901,12079)
+•ModifyGraph rgb(OC_S_class_total_ppb_smth)=(20303,23901,12079),rgb(HC_S_class_total_ppb_smth)=(59367,48830,16448)
+•ModifyGraph axRGB(newaxis_Left)=(53456,43690,14649),tlblRGB(newaxis_Left)=(59367,48830,16448),alblRGB(newaxis_Left)=(59367,48830,16448)
+•ModifyGraph axRGB(left)=(20303,23901,12079),tlblRGB(left)=(20303,23901,12079),alblRGB(left)=(20303,23901,12079)
+•ModifyGraph rgb(OC_S_class_total_ppb_smth)=(20303,23901,12079),rgb(HC_S_class_total_ppb_smth)=(53456,43690,14649)
+•ModifyGraph rgb(HC_S_class_total_ppb_smth)=(53456,43690,14649)
+•ModifyGraph axRGB(right)=(20303,23901,12079),tlblRGB(right)=(20303,23901,12079),alblRGB(right)=(20303,23901,12079)
+•ModifyGraph axRGB(newaxis_right)=(53456,43690,14649),tlblRGB(newaxis_right)=(53456,43690,14649),alblRGB(newaxis_right)=(53456,43690,14649)
+•ModifyGraph axRGB(right)=(56797,29298,12336),tlblRGB(right)=(56797,29298,12336),alblRGB(right)=(56797,29298,12336)
+•ModifyGraph axRGB(newaxis_right)=(11822,7967,10023)
+•ModifyGraph lsize(HC_class_total_ppb_smth)=3
+•ModifyGraph lsize=3
+•ModifyGraph lsize=3
+•ModifyGraph fSize(newaxis_Left)=18
+•ModifyGraph fSize(left)=18
+•Label left "\\F'Arial Black'Σ C\\BX\\MH\\BY\\MS\\BZ\\MO\\BW\\M [ppb]"
+•Label newaxis_Left "\\F'Arial Black' Σ C\\Bx\\MH\\BY\\MS\\BZ\\M [ppb]"
+•Label right "\\F'Arial Black'Σ C\\BX\\MH\\BY\\MS\\BZ\\MO\\BW\\M [ppb]"
+•Label newaxis_right "\\F'Arial Black'Σ C\\Bx\\MH\\BY\\MS\\BZ\\M [ppb]"
+•Label newaxis_right "\\F'Arial Black'Σ C\\Bx\\MH\\BY\\M [ppb]"
+•Label right "\\F'Arial Black' Σ C\\Bx\\MH\\BY\\MO\\BW\\M [ppb]"
+•Label left "\\F'Arial Black' Σ C\\Bx\\MH\\BY\\MO\\BW\\M [ppb]"
+•Label newaxis_Left "\\F'Arial Black'Σ C\\Bx\\MH\\BY\\M [ppb]"
+•ModifyGraph fSize(right)=18
+•ModifyGraph fSize(newaxis_right)=18
+•ModifyGraph fSize(right)=18
+•ModifyGraph fSize(newaxis_right)=18
+•ModifyGraph fSize(left)=18
+•ModifyGraph fSize(newaxis_Left)=18
+•ModifyGraph notation(newaxis_Left)=1,font(newaxis_Left)="Arial",freePos(newaxis_Left)=34.6667
+•HideTools/A
+•HideTools/A
+•ModifyGraph manTick(right)={0,1,0,1},manMinor(right)={0,0}
+•ModifyGraph nticks(newaxis_right)=4,freePos(newaxis_right)=47.1111;DelayUpdate
+•SetAxis newaxis_right 0,1.5
+•ModifyGraph nticks(right)=4
+•SetAxis right 0,0.3;DelayUpdate
+•ModifyGraph nticks(right)=3
+•SetAxis left 0,4;DelayUpdate
+•ModifyGraph nticks(left)=4
+•ShowTools/A arrow
+•HideTools/A
+•ModifyGraph nticks(newaxis_right)=4,freePos(newaxis_right)=42.6667
+•SetAxis right 0,3;DelayUpdate
+•ModifyGraph manTick(right)={0,1,0,1},manMinor(right)={0,50}
+•ModifyGraph nticks=5,manTick(newaxis_right)={0,1,0,1},manMinor(newaxis_right)={0,0};DelayUpdate
+•SetAxis newaxis_right 0,3
+•ModifyGraph manTick(newaxis_Left)={0,1,0,1},manMinor(newaxis_Left)={0,0}
+•ModifyGraph manTick(left)={0,2,0,1},manMinor(left)={0,0}
+•ModifyGraph manTick(left)={0,1,0,1},manMinor(left)={0,0}
+•Legend/K/N=text0
+•Legend/K/N=text0
+•ModifyGraph tlblRGB(newaxis_right)=(11822,7967,10023),alblRGB(newaxis_right)=(11822,7967,10023)
+•SavePICT/E=-5/B=72
